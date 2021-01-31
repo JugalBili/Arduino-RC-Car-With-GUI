@@ -25,12 +25,20 @@ This RC car project was made using an arduino, a small microcontroller, along wi
  ### Media
  Images of the finished RC car can be seen below.
  
+<img src="Images\car_front.jpeg" width=300> 
+<img src="Images\car_side.jpeg" width=300>
+<img src="Images\inside_front.jpeg" width=300> 
+<img src="Images\inside_side.jpeg" width=300> 
+<img src="Images\inside_top.jpeg" width=600> <br />
 <br />
-<img src="Images\car_front.jpeg" width=400> 
-<img src="Images\car_side.jpeg" width=400>  <br />
-<img src="Images\inside_front.jpeg" width=400> 
-<img src="Images\inside_side.jpeg" width=400> 
-<img src="Images\inside_top.jpeg" width=800> 
+<br />
+
+A video of the RC car in action can be seen below (Clicking redirects to vimeo):
+[![Video](https://i.vimeocdn.com/video/1048877009.webp?mw=960&mh=540)](https://vimeo.com/506781672)
+
+<br />
+The images below show the circuit diagram and the 3D models for the car. 
+<img src="Images\circuit.jpg"> 
 
 
 
