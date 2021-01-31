@@ -1,9 +1,10 @@
-# Python - CFM Discord Bot
+# Python/C - Arduino RC Car
 
 ## Sections 
 - [Description](#description)
+    - [Media](#media)
 - [Getting Started](#getting-started)
-    - [Dependencies](#dependencies)
+    - [Dependencies/Libraries](#dependencies/libraries)
     - [Installing](#installing)
     - [Setting Up](#setting-up)
     - [Executing](#executing)
@@ -12,7 +13,27 @@
 
 ---
 ## Description
-... 
+This RC car project was made using an arduino, a small microcontroller, along with other modules such as the HC-06 bluetooth module and the L298N motor drive. The car's frame was entirely 3D printed with a custom design and a python script was develloped to control teh car using wither WSAD keyboard keys or by pressing/holding the buttons on the GUI. 
+
+<br />
+
+**Future Plans:**
+ - Add a camera onto the top of the car frame which cna then be used to stream directly to the Python GUI. 
+ - Incorporate OpenCV to add semi autonomous functions which as wall avoidance and the ability to follow a line set on the ground. 
+
+
+ ### Media
+ Images of the finished RC car can be seen below.
+ 
+<br />
+<img src="Images\car_front.jpeg" width=400> 
+<img src="Images\car_side.jpeg" width=400>  <br />
+<img src="Images\inside_front.jpeg" width=400> 
+<img src="Images\inside_side.jpeg" width=400> 
+<img src="Images\inside_top.jpeg" width=800> 
+
+
+
 
 
 ---
@@ -21,6 +42,7 @@
 ### Dependencies/Libraries
 - Python >= 3.6.0
 - pyserial == 8.0.22 `pip install pyserial`
+- [Arduino IDE](https://www.arduino.cc/en/software) 
 - Mac/Windows OS
 
 <br />
@@ -35,7 +57,15 @@ Or you can download the zip directly from github.
 
 
 ### Setting Up
-... 
+First, download the Arduino IDE [here](https://www.arduino.cc/en/software), connect your arduino to your computer, then copy and upload the contents of the `Motor_Control.ino` file found in the Motor_Control folder. 
+> **IMPORTANT NOTE:** You may need to change the pin numbers in the program respective to the pin numbers which you have connected your motor drive to. 
+
+In order to make use of the bluetooth capabilities, you will first need to pair your HC-05/HC-06 bluetooth module to your computer. The default pairing password should be 1234, or look at your specefic models instruction sheet. 
+
+Next, on line 10 in `GUI_Controller.py`, you will need to enter the COM port which your bluetooth module has conencted to on your computer. TO find which COM port you module has connected to, on Windows 10, follow the steps below: 
+ 1. Open control panel and click on "Devices and Printers"
+ 2. Right click on your bluetooth module device and select properties
+ 3. Goto the services tab and write down the COM port listed below in the code where it says "COM4"
 
 <br />
 

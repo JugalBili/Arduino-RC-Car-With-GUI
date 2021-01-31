@@ -7,7 +7,7 @@ root = Tk()
 root.geometry("600x350")
 
 # initializes serial communication with COM3 
-ser = serial.Serial("COM3", 9600)
+ser = serial.Serial("COM4", 9600)
 
 
 # Function runs when keyboard input is recieved
